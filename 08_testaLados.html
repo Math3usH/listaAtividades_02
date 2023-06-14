@@ -3,9 +3,44 @@
     // Receba os três lados de um triângulo. Informe se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno. Dica: pesquise sobre a regra para saber se os lados formam um triângulo e também sobre os tipos de triângulos.
 
     //Entrada
+    const lado1 = Number(prompt("diga a medida do primeiro lado do triangulo").trim())
+    const lado2 = Number(prompt("figa o valor do segundo lado do triangulo").trim())
+    const lado3 = Number(prompt("diga o valor do terceiro lado do triangulo").trim())
 
 
     //Processamento
+    if(isNaN(lado1) || isNaN(lado2) || isNan(lado3)){
+        alert("resposta invalida")
+    }
+    else if(lado1 < 0 || lado2 < 0 || lado3 < 0){
+        alert("numeros negativos são invalidos")
+    }
+    else if(lado1 == lado2 && lado1 == lado3){
+        alert("ele é equilatero")
+    }
+    else if(lado1 == lado2 || lado1 == lado3){
+        if(lado2 !== lado3){
+            alert("ele é isosceles")
+        }
+    }
+    else if(lado2 == lado3 || lado2 == lado1){
+        if(lado1 !== lado3){
+            alert("ele é isosceles")
+        }
+    }
+    else if(lado3 == lado2 || lado3 == lado1){
+        if(lado2 !== lado1){
+            alert("ele éisosceles")
+        }
+    }
+    else if(lado1 !== lado2 && lado1 !== lado3){
+        if(lado2 !== lado3 ){
+            alert("ekle é escaleno")
+        }
+    }
+    else{
+        alert("resposta invalida")
+    }
 
 
     //Saída

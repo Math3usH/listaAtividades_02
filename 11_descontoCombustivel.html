@@ -14,12 +14,48 @@
     */
 
     //ENTRADA
+    const combustível = prompt("qual o tipo do cumbustivel voce ira colocar no carro? A=álcool ou G=gasolina").trim().toUpperCase()
+    const litro = Number(prompt("quantos litros ira colocar de combustivel ira colocara?").trim().toUpperCase())
 
 
     //PROCESSAMENTO
+    const gasolina = 6.50
+    const alcool = 6.10
 
     
     //SAÍDA
+    if(combustível == "A"){
+        if(litro > 20){
+            const  combA = alcool * litro
+            const combA2 = combA * 0.05
+            const combA3 = combA - combA2
+            alert(`voce pagara R$ ${combA3.toFixed(2)}`)
+        }
+    
+    else{
+        const combA = alcool * litro
+        const combA2 = combA * 0.03
+        const combA3 = combA - combA2
+        alert(`voce pagara R$ ${combA3.toFixed(2)}`)
+    }
+}
+
+else if(combustível == "G"){
+        if(litro > 20){
+            const  combG = gasolina * litro
+            const combG2 = combG * 0.06
+            const combG3 = combG - combG2
+            alert(`voce pagara R$ ${combG3.toFixed(2)}`)
+    }
+    else{
+        const combG = gasolina * litro
+        const combG2 = combG * 0.04
+        const combG3 = combG - combG2
+        alert(`voce pagara R$ ${combG3.toFixed(2)}`)
+    }
+}
+
+
 
 
 </script>

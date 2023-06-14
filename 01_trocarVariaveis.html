@@ -6,10 +6,23 @@
     */
 
     //ENTRADA
+    let num1 = prompt("informe um numero inteiro")
+    let num2 = prompt("informe outro numero inteiro")
 
     //PROCESSAMENTO
+    if(isNan(num1) == true || isNaN(num2) == true){
+        alert("um dos valors nao é m numero. Tente novamente")
+    }
+
+    else if (num1 == num2){
+        alert("os valores são iguais (informe valores diferentes)")
+    }
 
     //SAÍDA
+    alert(`o valor antigo do primeiro numero informado é ${num2}
+    o valor antigo do segundo numero informado é ${num1}
+    o valor novo do primeiro numero informado é ${num1}
+    o valor novo do segundo numero informado é ${num2}`)
 
     
 </script>

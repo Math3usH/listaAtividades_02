@@ -9,9 +9,31 @@
     // Entre 5.9 e zero            E
 
     // Entrada
+    const nota = Number(prompt("informe um numero positivo").trim().replace(",","."))
 
     
     // Processamento
+    if(isNaN(nota)){
+        alert("iforme numeros")
+    }
+    else if(nota > 10 || nota < 0){
+        alert("informe numeros positivos entre 0 e 10")
+    }
+    else if(nota >= 9.0){
+        alert("sua nota é A ")
+    }
+    else if(nota >= 8.0 || nota <= 8.9){
+        alert("sua nota é B")
+    }
+    else if(nota >= 7.0 || nota <= 7.9){
+        alert("sua nota é C")
+    }
+    else if(nota >= 6.0  || nota <=6.9){
+        alert("sua nota é D")
+    }
+    else if(nota >= 0 || nota <= 5.9){
+        alert("sua nota é E")
+    }
 
     
     // Saída

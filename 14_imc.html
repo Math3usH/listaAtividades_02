@@ -8,11 +8,30 @@
     // imc > 30: "Obeso"
 
     // Entrada
+    const altura = Number(prompt("informe sua altura").trim().replace(",","."))
+    const peso = Number(prmpt("informe seu peso").trim().replace(",","."))
 
     
     // Processamento
+    const quadrado = altura ** 2
+    const resultado = peso / quadrado 
 
     
     // Saída
+    if(isNaN(peso) || isNaN(altura)){
+        alert("iforme numeros")
+    }
+    else if(resultado <=18.5){
+        alert("indice de masa corporal= subpeso")
+    }
+    else if(resultado <= 25){
+        alert("indice de masa corporal= normal")
+    }
+    else if(resultado <= 30){
+        elert("indice de masa corporal= sobrepeso")
+    }
+    else if(resultado > 30){
+        alert("indece de masa corporal= obeso")
+    }
 
 </script>

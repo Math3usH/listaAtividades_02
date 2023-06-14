@@ -11,9 +11,48 @@
     */
 
     //ENTRADA
+    const per1 = prompt("telefonou para vitima? S/N").trim().toUpperCase();
+    const per2 = prompt("esteve no local do crime? S/N").trim().toUpperCase()
+    const per3 = prompt("mora perto da vitima? S/N").trim().toUpperCase()
+    const per4 = prompt("devia para vitima? S/N").trim().toUpperCase()
+    const per5 = prompt("ja trabalhou com a vitima? S/N").trim().toUpperCase()
 
     //PROCESSAMENTO
+    let contagem = 0
 
     //SAÍDA
+    if(per1 == "S"){
+        contagem = contagem + 1
+    }
 
+    if(per2 == "S"){
+       contagem = contagem + 1
+    }
+
+    if(per3 == "S"){
+        contagem = contagem + 1
+    }
+
+    if(per4 == "S"){
+        contagem = contagem + 1
+    }
+
+    if(per5 == "S"){
+        contagem = contagem + 1
+    }
+
+
+    
+    if (contagem <= 1 ){
+        alert("inocente")
+    }
+    else if(contagem == 2){
+        alert("suspeito")
+    }
+    else if( contagem <=4){
+        alert("cumplice")
+    }
+    else if(contagem == 5 ){
+        alert("assasino")
+    }
 </script>

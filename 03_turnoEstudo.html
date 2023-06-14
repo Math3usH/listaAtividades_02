@@ -12,12 +12,29 @@
     */
 
     //ENTRADA
+    const turno = prompt("em qual turno vocẽ estuda? (M para matutino; V para vespertino; N para noturno)").toLowerCase().trim();
 
-    
     //PROCESSAMENTO
+    if(!isNaN(turno)){
+        alert("resposta inválida. Responda: M para matutino; V para vespertino; N para noturno")
 
-    
+//PROCESSAMENTO")
+    }
+    else if (turno == "m" || turno == "matutino") {
+        alert("bom dia")
+    }
+    else if (turno == "v" || turno == "vespertino") {
+        alert("boa tarde")
+    }
+    else if (turno == "n" || turno == "noturno") {
+        alert("boa noite")
+    }
+    else {
+        alert("reposta invalida (M para matutino; V para vespertino; N para noturno)")
+    }
+
+
     //SAÍDA
-    
+
 
 </script>
